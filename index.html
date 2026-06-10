@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KR0ERSRKXG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KR0ERSRKXG');
+  </script>
+  <meta name="description" content="Calculate your Body Mass Index (BMI) with our free online calculator. Supports metric & US standard units. Detailed analysis tool for men, women, adults, and children.">
+  <meta name="keywords" content="bmi calculator, bmi calculator women, bmi calculator men, bmi calculator female, bmi calculator male, bmi calculator online, bmi calculator women age, bmi calculator kg with age, bmi calculator for women, bmi calculator by age, bmi calculator kg, women bmi calculator, child bmi calculator, bmi calculator for female, adult bmi calculator, online bmi calculator">
+  <meta name="author" content="bmicalculat.com">
+  <meta name="theme-color" content="#171717">
+  <title>Body mass index calculator. bmicalculat.com BMI Tool.</title>
+  
+  <!-- Canonical link for SEO -->
+  <link rel="canonical" href="https://bmicalculat.com/">
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bmicalculat.com/">
+  <meta property="og:title" content="Body mass index calculator. bmicalculat.com BMI Tool.">
+  <meta property="og:description" content="Use our accurate BMI Calculator to assess body mass index. Specialized charts and guidance metrics for women, men, adults, and children. Support for metric (kg) & standard weight models.">
+  <meta property="og:image" content="og-image.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://bmicalculat.com/">
+  <meta name="twitter:title" content="Body mass index calculator. bmicalculat.com BMI Tool.">
+  <meta name="twitter:description" content="Use our accurate BMI Calculator to assess body mass index. Specialized charts and guidance metrics for women, men, adults, and children. Support for metric (kg) & standard weight models.">
+  <meta name="twitter:image" content="og-image.png">
+  
+  <!-- Preload fonts for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="favicon.png?v=1.0.2">
+  <link rel="stylesheet" href="style.css?v=1.0.2">
+  
+  <!-- Structured Data / JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Body Mass Index (BMI) Calculator",
+    "url": "https://bmicalculat.com",
+    "description": "An interactive, accurate BMI Calculator supporting both Metric and Imperial units, featuring a history log and personalized health targets.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "what's my bmi calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"what's my BMI calculator\" is an online tool designed to measure your Body Mass Index (BMI). By taking your height and weight, the calculator provides a numerical score categorizing you into underweight, healthy weight, overweight, or obese ranges.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "what is my bmi female calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"what is my BMI female calculator\" uses standard height and weight metrics to calculate body mass index for women. While the calculation formula is standard, women naturally possess different healthy body composition profiles and essential body fat distributions compared to men.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "what is bmi calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"what is BMI calculator\" is a standard healthcare screening tool used to estimate overall body fatness. It evaluates your weight in relation to your height, giving a general indication of health and weight-related risk categories.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "what is my bmi women calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"what is my BMI women calculator\" is a search-focused terms for a weight-to-height screening tool configured for women. It helps female users evaluate if their weight is in a healthy proportion relative to their height.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "is bmi calculator accurate",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>While a BMI calculator is a highly effective initial screening method, it does not measure actual body fat percentage directly. It can overestimate body fatness in muscular athletes and underestimate fatness in elderly individuals who have lost muscle density.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "how to calculate bmi calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>To calculate BMI manually, use the formula: <strong>BMI = weight (kg) / height² (m²)</strong>. For US standard imperial units, use: <strong>BMI = 703 × weight (lbs) / height² (inches²)</strong>.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "how to use bmi calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>To use our BMI calculator, select your gender, enter your age, select metric or US units, and slide/type your height and weight. The calculator will instantly display your score, ideal targets, and risk classification.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "BMI calculator kg with age",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"BMI calculator kg with age\" uses your age and metric weight (kg) to evaluate your body mass. Age is key, as older adults may benefit from slightly higher target BMI ranges (23 to 27) to support structural bone health.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "Ideal weight calculator in kg",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>An \"ideal weight calculator in kg\" calculates the optimal weight range for your height using WHO normal boundaries (18.5 to 24.9) and clinical dosing guidelines like the Devine formula.</p>"
+      }
+    }, {
+      "@type": "Question",
+      "name": "Body fat calculator",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "<p>A \"body fat calculator\" measures the actual percentage of adipose tissue in your body using tape measurements or calipers. This differs from BMI, which only assesses overall weight proportions without distinguishing fat from lean muscle.</p>"
+      }]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Decorative signature Vercel mesh gradient backdrop -->
+  <div class="mesh-gradient-backdrop"></div>
+  
+  <!-- Header / Navigation -->
+  <header>
+    <div class="header-container container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+          <img src="logo.png?v=1.0.2" alt="bmicalculat.com Logo" class="logo-img">
+          <span class="logo-text">bmicalculat<span class="highlight">.com</span></span>
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-menu-link active">Calculator</a>
+        <a href="about.html" class="nav-menu-link">About Us</a>
+        <a href="contact.html" class="nav-menu-link">Contact Us</a>
+        <a href="privacy.html" class="nav-menu-link">Privacy Policy</a>
+        <a href="terms.html" class="nav-menu-link">Terms</a>
+      </nav>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sun-icon">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="moon-icon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Calculator Area -->
+  <main class="container">
+    <section class="calculator-section">
+      <h1 class="main-title">Calculate your body mass index.</h1>
+      <p class="subtitle">A developer-designed body mass index calculator. Supports metric and US standard systems, tracks calculations, and estimates health targets.</p>
+
+      <div class="grid-layout">
+        <!-- Input Panel -->
+        <div class="panel card" id="input-panel">
+          <div class="unit-toggle-container">
+            <button class="unit-btn active" id="btn-metric" onclick="setUnitSystem('metric')">Metric</button>
+            <button class="unit-btn" id="btn-us" onclick="setUnitSystem('us')">US Standard</button>
+          </div>
+
+          <form id="bmi-form" onsubmit="event.preventDefault(); calculateBMI();">
+            <!-- Gender Selection -->
+            <div class="input-group">
+              <label class="group-label">Gender</label>
+              <div class="segmented-control">
+                <input type="radio" name="gender" id="gender-male" value="male" checked>
+                <label for="gender-male">Male</label>
+                
+                <input type="radio" name="gender" id="gender-female" value="female">
+                <label for="gender-female">Female</label>
+              </div>
+            </div>
+
+            <!-- Age Input -->
+            <div class="input-group">
+              <div class="label-row">
+                <label for="age">Age</label>
+                <span class="unit-label font-mono">years</span>
+              </div>
+              <div class="dual-input">
+                <input type="number" id="age" min="2" max="120" value="25" class="num-input font-mono">
+                <input type="range" id="age-slider" min="2" max="120" value="25" class="slider-input">
+              </div>
+              <span class="info-note font-mono">Calculates standard child/teen percentiles for ages 2–19.</span>
+            </div>
+
+            <!-- Height Input -->
+            <div class="input-group" id="height-group-metric">
+              <div class="label-row">
+                <label for="height-metric">Height</label>
+                <span class="unit-label font-mono">cm</span>
+              </div>
+              <div class="dual-input">
+                <input type="number" id="height-metric" min="50" max="250" value="175" class="num-input font-mono">
+                <input type="range" id="height-slider-metric" min="50" max="250" value="175" class="slider-input">
+              </div>
+            </div>
+
+            <!-- Height Input US (Feet and Inches) -->
+            <div class="input-group hidden" id="height-group-us">
+              <label>Height</label>
+              <div class="us-height-inputs">
+                <div class="field">
+                  <input type="number" id="height-feet" min="1" max="8" value="5" class="num-input font-mono">
+                  <span class="sub-label font-mono">feet</span>
+                </div>
+                <div class="field">
+                  <input type="number" id="height-inches" min="0" max="11" value="9" class="num-input font-mono">
+                  <span class="sub-label font-mono">inches</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weight Input -->
+            <div class="input-group" id="weight-group-metric">
+              <div class="label-row">
+                <label for="weight-metric">Weight</label>
+                <span class="unit-label font-mono">kg</span>
+              </div>
+              <div class="dual-input">
+                <input type="number" id="weight-metric" min="10" max="300" step="0.1" value="70" class="num-input font-mono">
+                <input type="range" id="weight-slider-metric" min="10" max="300" value="70" class="slider-input">
+              </div>
+            </div>
+
+            <!-- Weight Input US -->
+            <div class="input-group hidden" id="weight-group-us">
+              <div class="label-row">
+                <label for="weight-us">Weight</label>
+                <span class="unit-label font-mono">lbs</span>
+              </div>
+              <div class="dual-input">
+                <input type="number" id="weight-us" min="20" max="650" step="0.1" value="154" class="num-input font-mono">
+                <input type="range" id="weight-slider-us" min="20" max="650" value="154" class="slider-input">
+              </div>
+            </div>
+
+            <!-- Activity Level (Optional for calorie calculation) -->
+            <div class="input-group">
+              <label for="activity">Activity level</label>
+              <select id="activity">
+                <option value="1.2">Sedentary (little or no exercise)</option>
+                <option value="1.375">Lightly Active (exercise 1-3 days/week)</option>
+                <option value="1.55" selected>Moderately Active (exercise 3-5 days/week)</option>
+                <option value="1.725">Very Active (hard exercise 6-7 days/week)</option>
+                <option value="1.9">Extra Active (very intense daily exercise/sports)</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Calculate BMI</button>
+              <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Output Results Panel -->
+        <div class="panel card result-card" id="result-panel">
+          <span class="eyebrow-caption font-mono">Analysis Report</span>
+          <h2 class="section-title">Your health analysis.</h2>
+          
+          <!-- Speedometer SVG Gauge -->
+          <div class="gauge-container">
+            <svg class="gauge" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background arcs -->
+              <path d="M 20,110 A 80,80 0 0,1 180,110" fill="none" stroke="var(--gauge-bg)" stroke-width="6" stroke-linecap="round"/>
+              
+              <!-- Color tracks representing BMI categories -->
+              <!-- Underweight: 20,110 to ~53.6,56.4 (Angle 0 to 45 deg) -->
+              <path d="M 20,110 A 80,80 0 0,1 43.4,53.4" fill="none" stroke="var(--color-under)" stroke-width="6" />
+              <!-- Normal: ~53.6,56.4 to ~100,30 (Angle 45 to 90 deg) -->
+              <path d="M 43.4,53.4 A 80,80 0 0,1 100,30" fill="none" stroke="var(--color-normal)" stroke-width="6" />
+              <!-- Overweight: ~100,30 to ~146.4,56.4 (Angle 90 to 135 deg) -->
+              <path d="M 100,30 A 80,80 0 0,1 156.6,53.4" fill="none" stroke="var(--color-over)" stroke-width="6" />
+              <!-- Obese: ~146.4,56.4 to 180,110 (Angle 135 to 180 deg) -->
+              <path d="M 156.6,53.4 A 80,80 0 0,1 180,110" fill="none" stroke="var(--color-obese)" stroke-width="6" stroke-linecap="round" />
+              
+              <!-- Pointer Needle -->
+              <g id="needle" class="needle-group" style="transform-origin: 100px 110px; transform-box: view-box;">
+                <line x1="100" y1="110" x2="100" y2="45" stroke="var(--needle-color)" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <circle cx="100" cy="110" r="3" fill="var(--needle-center)"/>
+
+              <!-- Center Text inside the gauge -->
+              <text x="100" y="78" text-anchor="middle" class="gauge-center-text font-mono" id="gauge-bmi-val">22.8</text>
+              <text x="100" y="96" text-anchor="middle" class="gauge-label-text font-mono" id="gauge-bmi-cat">Normal</text>
+            </svg>
+          </div>
+
+          <div class="result-breakdown">
+            <div class="metric-row">
+              <span class="metric-label">BMI Value</span>
+              <span class="metric-val font-mono" id="res-bmi">22.86 <span class="unit-text">kg/m²</span></span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Classification</span>
+              <span class="metric-val status-pill normal font-mono" id="res-cat">Healthy</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Ideal Weight Range</span>
+              <span class="metric-val font-mono text-right" id="res-ideal">56.7 kg – 76.2 kg</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Target Goal</span>
+              <span class="metric-val text-right" id="res-target">You have a healthy weight.</span>
+            </div>
+          </div>
+
+          <!-- Secondary medical metrics (Ponderal / Prime) -->
+          <div class="advanced-metrics-grid">
+            <div class="adv-card">
+              <span class="adv-lbl font-mono">BMI Prime</span>
+              <span class="adv-val font-mono" id="res-prime">0.91</span>
+              <span class="adv-note font-mono">Optimal: &lt; 1.0</span>
+            </div>
+            <div class="adv-card">
+              <span class="adv-lbl font-mono">Ponderal Index</span>
+              <span class="adv-val font-mono" id="res-ponderal">13.06 <span class="unit">kg/m³</span></span>
+              <span class="adv-note font-mono">3D mass index</span>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="btn btn-secondary btn-full flex-center" onclick="window.print()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              Print Clinic Report
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculation History (Local storage backed) -->
+    <section class="section history-section hidden" id="history-sec">
+      <div class="section-header">
+        <h2 class="section-title">Calculation history.</h2>
+        <button class="text-btn text-danger font-mono" onclick="clearHistory()">Clear History</button>
+      </div>
+      <div class="history-list" id="history-container">
+        <!-- Rendered dynamically by script -->
+      </div>
+    </section>
+
+    <!-- Contextual Information (SEO Content) -->
+    <section class="info-grid section">
+      <!-- Standard BMI Chart Card -->
+      <div class="card chart-card">
+        <h2 class="card-title">BMI classifications for adults.</h2>
+        <p class="card-desc">Standard classifications defined by the World Health Organization (WHO) for adults aged 20 and over.</p>
+        <div class="table-container">
+          <table class="data-table" id="bmi-table">
+            <thead>
+              <tr class="font-mono">
+                <th>BMI Range</th>
+                <th>Classification</th>
+                <th>Risk of Comorbidities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-range="under">
+                <td class="font-mono">Below 18.5</td>
+                <td class="status-cell under">Underweight</td>
+                <td>Low (Increased risk of nutritional deficiency)</td>
+              </tr>
+              <tr class="active" data-range="normal">
+                <td class="font-mono">18.5 – 24.9</td>
+                <td class="status-cell normal">Normal / Healthy</td>
+                <td>Average / Optimal</td>
+              </tr>
+              <tr data-range="over">
+                <td class="font-mono">25.0 – 29.9</td>
+                <td class="status-cell over">Overweight</td>
+                <td>Increased</td>
+              </tr>
+              <tr data-range="obese1">
+                <td class="font-mono">30.0 – 34.9</td>
+                <td class="status-cell obese">Obese Class I (Moderate)</td>
+                <td>Moderate</td>
+              </tr>
+              <tr data-range="obese2">
+                <td class="font-mono">35.0 – 39.9</td>
+                <td class="status-cell obese">Obese Class II (Severe)</td>
+                <td>Severe</td>
+              </tr>
+              <tr data-range="obese3">
+                <td class="font-mono">40.0 and Above</td>
+                <td class="status-cell extreme">Obese Class III (Extremely Severe)</td>
+                <td>Very Severe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Explanatory Text Content (600+ words SEO Copy) -->
+      <div class="card content-card">
+        <h2 class="card-title">Everything you need to know about our body mass index calculator.</h2>
+        <p>Body Mass Index (BMI) is a medical calculation used to measure a person's relative weight based on their height and weight. Calculating BMI provides a cost-effective, straightforward screening method to categorize individuals into weight classifications that correspond to health risk profiles. While it is not a direct measurement of body fat percentage, it correlates strongly with metabolic and cardiovascular risk indicators.</p>
+        
+        <h3>How to use this online bmi calculator.</h3>
+        <p>Our interactive <strong>online bmi calculator</strong> is built to be fast, responsive, and completely client-side. To start, select your gender and input your age. Next, select your preferred unit system. The <strong>bmi calculator kg</strong> tab lets you input height in centimeters (cm) and weight in kilograms (kg). Alternatively, switching to the US Standard tab allows you to input feet and inches for height and pounds (lbs) for weight. Our <strong>bmi calculator online</strong> runs conversions automatically as you slide the controls, updating your score, classification, and target ranges immediately. You can click the calculate button to log your results directly into the local browser history database.</p>
+        
+        <h3>Understanding the bmi calculator for women and men.</h3>
+        <p>When searching for a <strong>bmi calculator women</strong> or <strong>bmi calculator men</strong>, users often ask if the formulas differ by gender. Officially, the standard clinical formula is identical for both sexes. However, body composition differs significantly between males and females. A <strong>women bmi calculator</strong> should be interpreted with the understanding that women naturally carry more essential body fat (for reproductive and hormonal reasons) than men at the exact same BMI score. Therefore, a <strong>bmi calculator female</strong> result may reflect a higher fat-to-muscle ratio than a <strong>bmi calculator male</strong> output, even if they share identical scores. When using our <strong>bmi calculator for female</strong> and male profiles, these physiological variations are important to discuss with a healthcare professional, as a flat numerical scale does not differentiate muscular density from adiposity.</p>
+        
+        <h3>Analyzing results with a bmi calculator by age and weight.</h3>
+        <p>Age is a crucial modifier in clinical body composition assessment. Standard WHO categories serve as a general <strong>adult bmi calculator</strong> for ages 20 and over, but utilizing a <strong>bmi calculator by age</strong> provides context for shifting bodies. The <strong>bmi calculator women age</strong> charts indicate that older women typically experience a decrease in muscle density and an increase in fat mass. For seniors, a <strong>bmi calculator kg with age</strong> analysis suggests that a slightly higher BMI (between 23 and 27) might offer protective skeletal benefits against osteoporosis and mortality. Consequently, relying on a flat <strong>bmi calculator kg</strong> result without factoring in age-related baseline shifts can lead to incorrect dietary or lifestyle restrictions.</p>
+        
+        <h3>How a child bmi calculator differs.</h3>
+        <p>For children and adolescents (ages 2 to 19), a flat adult scale cannot be used. A <strong>child bmi calculator</strong> maps the weight and height score to age- and gender-specific growth percentiles. Because children grow in rapid, non-linear spurts, their body mass indices shift month-to-month. A child is categorized as underweight below the 5th percentile, healthy weight between the 5th and 85th, overweight between the 85th and 95th, and obese above the 95th percentile. Our tool highlights the standard child thresholds when younger age ranges are selected, bridging the gap between child and <strong>adult bmi calculator</strong> formats.</p>
+        
+        <h3>The clinical formulas.</h3>
+        <p>For standard calculations, the formulas are:
+          <br><code>Metric: BMI = weight (kg) / height² (m²)</code>
+          <br><code>Imperial: BMI = 703 × weight (lbs) / height² (inches²)</code>
+        </p>
+        
+        <h3>Advanced medical indices: Ponderal index & BMI prime.</h3>
+        <ul>
+          <li><strong>Ponderal Index (PI):</strong> Calculated as <code>weight (kg) / height³ (m³)</code>, this scales body mass in three dimensions. It is highly useful for comparing proportions in extremely tall or short individuals, normalizing body frame values better than standard 2D BMI.</li>
+          <li><strong>BMI Prime:</strong> Is the ratio of your actual BMI to the upper limit of the normal weight range (25.0). A BMI Prime of 0.8 is underweight, 0.8 to 1.0 is healthy, and above 1.0 represents overweight thresholds.</li>
+        </ul>
+        
+        <p class="warning-alert"><strong>Disclaimer:</strong> This tool is an informational screening aid. BMI does not measure visceral fat or lean muscle mass directly. Athletes, bodybuilders, or pregnant individuals should not rely on standard BMI scores as indicators of health.</p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion section -->
+    <section class="section faq-section">
+      <h2 class="section-title text-center">Frequently asked questions.</h2>
+      <div class="faq-container">
+        
+        <details class="faq-card" open>
+          <summary class="faq-question">What's my BMI calculator?</summary>
+          <div class="faq-answer">
+            <p>A "what's my BMI calculator" is an online tool designed to measure your Body Mass Index (BMI). By taking your height and weight, the calculator provides a numerical score categorizing you into underweight, healthy weight, overweight, or obese ranges.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">What is my BMI female calculator?</summary>
+          <div class="faq-answer">
+            <p>A "what is my BMI female calculator" uses standard height and weight metrics to calculate body mass index for women. While the calculation formula is standard, women naturally possess different healthy body composition profiles and essential body fat distributions compared to men.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">What is BMI calculator?</summary>
+          <div class="faq-answer">
+            <p>A "what is BMI calculator" is a standard healthcare screening tool used to estimate overall body fatness. It evaluates your weight in relation to your height, giving a general indication of health and weight-related risk categories.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">What is my BMI women calculator?</summary>
+          <div class="faq-answer">
+            <p>A "what is my BMI women calculator" is a search-focused terms for a weight-to-height screening tool configured for women. It helps female users evaluate if their weight is in a healthy proportion relative to their height.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">Is BMI calculator accurate?</summary>
+          <div class="faq-answer">
+            <p>While a BMI calculator is a highly effective initial screening method, it does not measure actual body fat percentage directly. It can overestimate body fatness in muscular athletes and underestimate fatness in elderly individuals who have lost muscle density.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">How to calculate BMI calculator?</summary>
+          <div class="faq-answer">
+            <p>To calculate BMI manually, use the formula: <strong>BMI = weight (kg) / height² (m²)</strong>. For US standard imperial units, use: <strong>BMI = 703 × weight (lbs) / height² (inches²)</strong>.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">How to use BMI calculator?</summary>
+          <div class="faq-answer">
+            <p>To use our BMI calculator, select your gender, enter your age, select metric or US units, and slide/type your height and weight. The calculator will instantly display your score, ideal targets, and risk classification.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">BMI calculator kg with age?</summary>
+          <div class="faq-answer">
+            <p>A "BMI calculator kg with age" uses your age and metric weight (kg) to evaluate your body mass. Age is key, as older adults may benefit from slightly higher target BMI ranges (23 to 27) to support structural bone health.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">Ideal weight calculator in kg?</summary>
+          <div class="faq-answer">
+            <p>An "ideal weight calculator in kg" calculates the optimal weight range for your height using WHO normal boundaries (18.5 to 24.9) and clinical dosing guidelines like the Devine formula.</p>
+          </div>
+        </details>
+
+        <details class="faq-card">
+          <summary class="faq-question">Body fat calculator?</summary>
+          <div class="faq-answer">
+            <p>A "body fat calculator" measures the actual percentage of adipose tissue in your body using tape measurements or calipers. This differs from BMI, which only assesses overall weight proportions without distinguishing fat from lean muscle.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container container">
+      <p>&copy; 2026 bmicalculat.com Health. All clinical formulas verified against WHO/CDC guideline metrics. For informational purposes only.</p>
+      <div class="footer-links font-mono">
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KR0ERSRKXG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KR0ERSRKXG');
+  </script>
+  <meta name="description" content="Get in touch with the bmicalculat.com support team for feedback, questions about our BMI calculator, or custom integration requests.">
+  <meta name="author" content="bmicalculat.com">
+  <meta name="theme-color" content="#171717">
+  <title>Contact Us - bmicalculat.com BMI Calculator</title>
+  
+  <!-- Canonical link for SEO -->
+  <link rel="canonical" href="https://bmicalculat.com/contact.html">
+  
+  <!-- Preload fonts for speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/png" href="favicon.png?v=1.0.2">
+  <link rel="stylesheet" href="style.css?v=1.0.2">
+</head>
+<body>
+
+  <!-- Decorative signature Vercel mesh gradient backdrop -->
+  <div class="mesh-gradient-backdrop"></div>
+  
+  <!-- Header / Navigation -->
+  <header>
+    <div class="header-container container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+          <img src="logo.png?v=1.0.2" alt="bmicalculat.com Logo" class="logo-img">
+          <span class="logo-text">bmicalculat<span class="highlight">.com</span></span>
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-menu-link">Calculator</a>
+        <a href="about.html" class="nav-menu-link">About Us</a>
+        <a href="contact.html" class="nav-menu-link active">Contact Us</a>
+        <a href="privacy.html" class="nav-menu-link">Privacy Policy</a>
+        <a href="terms.html" class="nav-menu-link">Terms</a>
+      </nav>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sun-icon">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="moon-icon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    <section class="calculator-section" style="max-width: 600px; margin: 0 auto;">
+      <h1 class="main-title">Contact Us.</h1>
+      <p class="subtitle">Have feedback, support questions, or integration inquiries? Drop us a line.</p>
+      
+      <div class="card content-card" style="margin-top: 32px;">
+        <form id="contact-form" onsubmit="event.preventDefault(); handleContactSubmit();" style="display: flex; flex-direction: column; gap: 20px;">
+          <!-- Name Input -->
+          <div class="input-group" style="margin-bottom: 0;">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" required class="num-input font-mono" style="text-align: left; padding: 0 12px; margin-top: 10px;">
+          </div>
+          
+          <!-- Email Input -->
+          <div class="input-group" style="margin-bottom: 0;">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" required class="num-input font-mono" style="text-align: left; padding: 0 12px; margin-top: 10px;">
+          </div>
+          
+          <!-- Message Input -->
+          <div class="input-group" style="margin-bottom: 0;">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" required class="num-input font-mono" style="text-align: left; padding: 12px; margin-top: 10px; min-height: 120px; resize: vertical; height: auto; font-family: inherit;"></textarea>
+          </div>
+          
+          <div class="form-actions" style="margin-top: 12px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container container">
+      <p>&copy; 2026 bmicalculat.com Health. All clinical formulas verified against WHO/CDC guideline metrics. For informational purposes only.</p>
+      <div class="footer-links font-mono">
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function handleContactSubmit() {
+      const card = document.querySelector('.content-card');
+      card.innerHTML = `
+        <div style="text-align: center; padding: 32px 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--color-normal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width: 48px; height: 48px; margin-bottom: 20px;">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <h3 style="margin-top: 0; font-size: 18px; font-weight: 600; color: var(--text-main);">Message sent successfully.</h3>
+          <p style="color: var(--text-secondary); font-size: 14px; margin-top: 8px; line-height: 20px; max-width: 380px;">Thank you for getting in touch. The bmicalculat.com support team will respond to your inquiry shortly.</p>
+          <a href="index.html" class="btn btn-secondary" style="margin-top: 28px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; height: 40px; border-radius: var(--radius-pill); font-size: 13px;">Return to Calculator</a>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# robots.txt for bmicalculat.com
+# Google and other search engine crawlers instructions
+
+User-agent: *
+Allow: /
+
+# Disallow crawler indexing of internal error templates
+Disallow: /404.html
+Disallow: /500.html
+
+# Reference sitemap
+Sitemap: https://bmicalculat.com/sitemap.xml

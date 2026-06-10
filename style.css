@@ -1,0 +1,1131 @@
+/* ==========================================================================
+   CSS CUSTOM VARIABLES & VERCEL TOKEN SETUP (Light theme default)
+   ========================================================================== */
+:root {
+  /* Colors */
+  --primary: #171717;          /* Stark Ink */
+  --primary-hover: #000000;
+  --on-primary: #ffffff;
+  
+  --bg-body: #fafafa;          /* Canvas Soft (98% white) */
+  --bg-card: #ffffff;          /* Canvas */
+  --bg-input: #ffffff;
+  --border-color: #ebebeb;      /* Hairline */
+  --border-strong: #a1a1a1;    /* Hairline Strong */
+  
+  --text-main: #171717;        /* Ink */
+  --text-secondary: #4d4d4d;   /* Body */
+  --text-muted: #888888;       /* Mute */
+  
+  /* Semantic highlights (Vercel sub-palette) */
+  --color-under: #50e3c2;      /* Cyan */
+  --color-normal: #0070f3;     /* Link Blue */
+  --color-over: #f5a623;       /* Warning Amber */
+  --color-obese: #ee0000;      /* Error Red */
+  --color-extreme: #7928ca;    /* Violet */
+  
+  /* Semantic backgrounds */
+  --bg-under-soft: #aaffec;
+  --bg-normal-soft: #d3e5ff;
+  --bg-over-soft: #ffefcf;
+  --bg-obese-soft: #f7d4d6;
+  --bg-extreme-soft: #d8ccf1;
+  
+  /* Shadows (Vercel Stacked Shadow System) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 1px 1px rgba(0, 0, 0, 0.02), 
+               0 2px 2px rgba(0, 0, 0, 0.02), 
+               0 8px 16px -4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 1px 2px rgba(0, 0, 0, 0.02),
+               0 8px 16px -4px rgba(0, 0, 0, 0.04),
+               0 24px 32px -8px rgba(0, 0, 0, 0.06);
+  
+  /* Geometry radii */
+  --radius-xs: 4px;            /* Tight pill button */
+  --radius-sm: 6px;            /* Base UI inputs */
+  --radius-md: 8px;            /* Feature cards */
+  --radius-lg: 12px;           /* Large cards */
+  --radius-pill: 100px;        /* Primary CTA pills */
+  
+  /* Gauge specifics */
+  --gauge-bg: #ebebeb;
+  --needle-color: #171717;
+  --needle-center: #171717;
+  --bg-header: rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   DARK THEME VARIABLES (Vercel Dark Console)
+   ========================================================================== */
+body.dark-theme {
+  --bg-body: #0a0a0a;          /* Stark Dark Body */
+  --bg-card: #111111;          /* Stark Dark Card */
+  --bg-input: #141414;
+  --border-color: #262626;      /* Dark Hairline */
+  --border-strong: #666666;
+  
+  --text-main: #ffffff;        /* White text */
+  --text-secondary: #888888;   /* Muted body text */
+  --text-muted: #666666;       /* Deep mute text */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 1px 2px rgba(0, 0, 0, 0.4), 
+               0 8px 16px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 1px 4px rgba(0, 0, 0, 0.5),
+               0 16px 24px -8px rgba(0, 0, 0, 0.6),
+               0 32px 48px -12px rgba(0, 0, 0, 0.7);
+  
+  /* Semantic background overrides (dark modes) */
+  --bg-under-soft: rgba(80, 227, 194, 0.15);
+  --bg-normal-soft: rgba(0, 112, 243, 0.15);
+  --bg-over-soft: rgba(245, 166, 35, 0.15);
+  --bg-obese-soft: rgba(238, 0, 0, 0.15);
+  --bg-extreme-soft: rgba(121, 40, 202, 0.15);
+  
+  --gauge-bg: #262626;
+  --needle-color: #ffffff;
+  --needle-center: #ffffff;
+  --bg-header: rgba(17, 17, 17, 0.8);
+}
+
+body.dark-theme .logo-img {
+  filter: invert(1);
+}
+
+/* ==========================================================================
+   RESET & SYSTEM BASICS
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace !important;
+}
+
+/* ==========================================================================
+   DECORATIVE MESH BACKDROP
+   ========================================================================== */
+.mesh-gradient-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 620px;
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(80, 227, 194, 0.08) 0px, transparent 55%),
+    radial-gradient(at 85% 15%, rgba(121, 40, 202, 0.07) 0px, transparent 50%),
+    radial-gradient(at 50% 12%, rgba(0, 112, 243, 0.06) 0px, transparent 60%),
+    radial-gradient(at 75% 50%, rgba(255, 77, 77, 0.04) 0px, transparent 40%),
+    radial-gradient(at 20% 55%, rgba(249, 203, 40, 0.04) 0px, transparent 40%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+/* ==========================================================================
+   HEADER / NAV BAR
+   ========================================================================== */
+header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-header);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header-container {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.logo-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-transform: lowercase;
+}
+
+.logo-text .highlight {
+  color: var(--text-main);
+  font-weight: 400;
+}
+
+/* Header Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-menu-link {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-menu-link:hover {
+  color: var(--text-main);
+}
+
+.nav-menu-link.active {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+/* Theme Toggle */
+.icon-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: var(--bg-body);
+  border-color: var(--border-strong);
+}
+
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+body.dark-theme .sun-icon { display: block; }
+body.dark-theme .moon-icon { display: none; }
+body:not(.dark-theme) .sun-icon { display: none; }
+body:not(.dark-theme) .moon-icon { display: block; }
+
+/* ==========================================================================
+   MAIN CONTENT & LAYOUT GRID
+   ========================================================================== */
+main {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.calculator-section {
+  margin-bottom: 80px;
+}
+
+/* Vercel Display-XL */
+.main-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 48px;
+  letter-spacing: -2.4px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Vercel Body-LG */
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 56px auto;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .main-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+  }
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+/* ==========================================================================
+   CARDS & PANELS
+   ========================================================================== */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.eyebrow-caption {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+/* Vercel Display-LG */
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--text-main);
+  letter-spacing: -1.2px;
+  margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   INPUTS & FORM ELEMENTS
+   ========================================================================== */
+/* Tab selectors styled as Vercel sub-navigation tabs */
+.unit-toggle-container {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.unit-btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  position: relative;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.unit-btn.active {
+  color: var(--text-main);
+  font-weight: 500;
+  border-bottom-color: var(--primary);
+}
+
+.input-group {
+  margin-bottom: 28px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label, .group-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  letter-spacing: -0.28px;
+}
+
+.unit-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Segmented Control for Gender */
+.segmented-control {
+  display: flex;
+  background-color: var(--bg-body);
+  padding: 3px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  margin-top: 10px;
+}
+
+.segmented-control input[type="radio"] {
+  display: none;
+}
+
+.segmented-control label {
+  flex: 1;
+  text-align: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: calc(var(--radius-sm) - 1px);
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.segmented-control input[type="radio"]:checked + label {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Dual Input row */
+.dual-input {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Vercel Form Inputs */
+.num-input {
+  width: 100%;
+  height: 40px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.num-input:focus {
+  border-color: var(--border-strong);
+  outline: none;
+}
+
+/* Stark Sliders */
+.slider-input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--border-color);
+  outline: none;
+}
+
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.slider-input::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* US standard height split inputs */
+.us-height-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.us-height-inputs .field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sub-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Selector dropdown */
+select {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text-main);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: var(--border-strong);
+  outline: none;
+}
+
+.info-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Buttons System */
+.btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* button-primary (Black Ink Pill) */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+/* button-secondary (White Pill on Hairline) */
+.btn-secondary {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-body);
+  border-color: var(--border-strong);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+/* ==========================================================================
+   OUTPUTS & RESULT CARD
+   ========================================================================== */
+.result-card {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.gauge-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.gauge {
+  width: 100%;
+  max-width: 250px;
+}
+
+.gauge-center-text {
+  font-size: 32px;
+  font-weight: 500;
+  fill: var(--text-main);
+  letter-spacing: -1px;
+}
+
+.gauge-label-text {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  fill: var(--text-muted);
+}
+
+.needle-group {
+  transform-origin: 100px 110px;
+  transform-box: view-box;
+  transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.result-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.metric-val {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.unit-text {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Minimalist Status pills for BMI values */
+.status-pill {
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pill.under {
+  background-color: var(--bg-under-soft);
+  color: #117a65;
+}
+
+.status-pill.normal {
+  background-color: var(--bg-normal-soft);
+  color: #0761d1;
+}
+
+.status-pill.over {
+  background-color: var(--bg-over-soft);
+  color: #ab570a;
+}
+
+.status-pill.obese {
+  background-color: var(--bg-obese-soft);
+  color: #c50000;
+}
+
+/* Advanced grid */
+.advanced-metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.adv-card {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adv-lbl {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.adv-val {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.adv-val .unit {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.adv-note {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.action-buttons {
+  margin-top: 28px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* ==========================================================================
+   HISTORY SECTION
+   ========================================================================== */
+.section {
+  margin-bottom: 80px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* Vercel Display-MD */
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-main);
+  letter-spacing: -0.8px;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.text-danger {
+  color: var(--color-obese);
+}
+
+.text-danger:hover {
+  text-decoration: underline;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 16px 24px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.history-details {
+  display: flex;
+  gap: 32px;
+}
+
+.hist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hist-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.hist-val {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   INFO GRID & TABLES (SEO Content)
+   ========================================================================== */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.content-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.content-card ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.content-card li {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.warning-alert {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary) !important;
+}
+
+/* Technical Data Table */
+.table-container {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table th, .data-table td {
+  padding: 12px 16px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  font-weight: 500;
+  color: var(--text-muted);
+  background-color: var(--bg-body);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.data-table tbody tr {
+  cursor: pointer;
+}
+
+.data-table tbody tr:hover {
+  background-color: var(--bg-body);
+}
+
+/* Highlight matching category */
+.data-table tbody tr.active {
+  background-color: var(--bg-body);
+  font-weight: 500;
+  border-left: 3px solid var(--primary);
+}
+
+.data-table tbody tr.active td {
+  color: var(--text-main);
+}
+
+.status-cell {
+  font-weight: 500;
+}
+
+.status-cell.under { color: var(--color-under); }
+.status-cell.normal { color: var(--color-normal); }
+.status-cell.over { color: var(--color-over); }
+.status-cell.obese { color: var(--color-obese); }
+.status-cell.extreme { color: var(--color-extreme); }
+
+/* ==========================================================================
+   FAQ SECTION (Vercel details-summary styling)
+   ========================================================================== */
+.faq-section {
+  max-width: 800px;
+  margin: 96px auto 0 auto;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 16px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-main);
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: '→';
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+details[open] .faq-question::after {
+  transform: rotate(90deg);
+  color: var(--text-main);
+}
+
+details[open] .faq-question {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-answer {
+  padding: 16px 20px;
+  background-color: var(--bg-body);
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   FOOTER STYLING
+   ========================================================================== */
+footer {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  padding: 48px 0;
+  margin-top: 96px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer p {
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 60%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--text-main);
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer p {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   PRINT MEDIA CUSTOMIZATION (Clinical Report Styles)
+   ========================================================================== */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+  
+  header, footer, .unit-toggle-container, .form-actions, .action-buttons, #theme-toggle, .faq-section, .history-section, .mesh-gradient-backdrop {
+    display: none !important;
+  }
+  
+  main {
+    padding-top: 0;
+  }
+  
+  .grid-layout {
+    display: block;
+  }
+  
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  
+  #input-panel {
+    border-bottom: 2px solid #ccc !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  #input-panel form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .dual-input {
+    display: block !important;
+  }
+  
+  .slider-input, select {
+    display: none !important;
+  }
+  
+  .num-input {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+  
+  .gauge-container {
+    page-break-inside: avoid;
+  }
+  
+  .result-breakdown {
+    border-top: 1px solid #000 !important;
+  }
+  
+  .advanced-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .adv-card {
+    background: transparent !important;
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+  }
+  
+  body::before {
+    content: "PULSEFIT CLINICAL HEALTH REPORT";
+    display: block;
+    font-size: 18pt;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}
