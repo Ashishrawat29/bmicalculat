@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script>
-    if (window.location.hostname === 'bmicalculat.pages.dev') {
+<head>  <script>
+    if (window.location.hostname !== 'bmicalculat.com' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
       window.location.replace('https://bmicalculat.com' + window.location.pathname + window.location.search);
     }
   </script>
@@ -139,8 +138,8 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "<p>A \"body fat calculator\" measures the actual percentage of adipose tissue in your body using tape measurements or calipers. This differs from BMI, which only assesses overall weight proportions without distinguishing fat from lean muscle.</p>"
-      }]
-    }
+      }
+    }]
   }
   </script>
 </head>

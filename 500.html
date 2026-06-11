@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <script>
-    if (window.location.hostname === 'bmicalculat.pages.dev') {
+    if (window.location.hostname !== 'bmicalculat.com' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
       window.location.replace('https://bmicalculat.com' + window.location.pathname + window.location.search);
     }
   </script>
