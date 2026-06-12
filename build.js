@@ -16,7 +16,8 @@ const FILES_TO_COPY = [
   'favicon.png',
   'og-image.png',
   'sitemap.xml',
-  'robots.txt'
+  'robots.txt',
+  'ads.txt'
 ];
 
 console.log('Starting build...');
