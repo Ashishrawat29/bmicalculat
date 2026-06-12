@@ -3,4 +3,5 @@ dist/
 .gemini/
 .claude/
 .agents/
+.wrangler/
 *.log
