@@ -1,5 +1,6 @@
 name = "bmicalculat"
 compatibility_date = "2026-06-10"
+workers_dev = false
 
 [assets]
 directory = "./dist"
